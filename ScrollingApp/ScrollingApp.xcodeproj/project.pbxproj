@@ -13,9 +13,11 @@
 		A60C4611281438F200F64D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C460F281438F200F64D10 /* Main.storyboard */; };
 		A60C4613281438F400F64D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C4612281438F400F64D10 /* Assets.xcassets */; };
 		A60C4616281438F400F64D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C4614281438F400F64D10 /* LaunchScreen.storyboard */; };
-		A60C46222814EBF500F64D10 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C46202814EBF500F64D10 /* CollectionViewController.swift */; };
-		A60C46232814EBF500F64D10 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60C46212814EBF500F64D10 /* CollectionViewController.xib */; };
-		A60C46262814EC3D00F64D10 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C46252814EC3D00F64D10 /* CollectionViewModel.swift */; };
+		A60C46262814EC3D00F64D10 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C46252814EC3D00F64D10 /* DetailViewModel.swift */; };
+		A60C46292814F19000F64D10 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C46272814F19000F64D10 /* DetailViewCell.swift */; };
+		A60C462A2814F19000F64D10 /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60C46282814F19000F64D10 /* DetailViewCell.xib */; };
+		A60C46312814F7C300F64D10 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C462F2814F7C300F64D10 /* DetailViewController.swift */; };
+		A60C46322814F7C300F64D10 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60C46302814F7C300F64D10 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +29,11 @@
 		A60C4612281438F400F64D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60C4615281438F400F64D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60C4617281438F400F64D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A60C46202814EBF500F64D10 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		A60C46212814EBF500F64D10 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
-		A60C46252814EC3D00F64D10 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		A60C46252814EC3D00F64D10 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		A60C46272814F19000F64D10 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		A60C46282814F19000F64D10 /* DetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewCell.xib; sourceTree = "<group>"; };
+		A60C462F2814F7C300F64D10 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A60C46302814F7C300F64D10 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				A60C46242814EC0500F64D10 /* Cells */,
-				A60C46202814EBF500F64D10 /* CollectionViewController.swift */,
-				A60C46212814EBF500F64D10 /* CollectionViewController.xib */,
+				A60C462F2814F7C300F64D10 /* DetailViewController.swift */,
+				A60C46302814F7C300F64D10 /* DetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,7 +100,7 @@
 		A60C461F2814EBD000F64D10 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A60C46252814EC3D00F64D10 /* CollectionViewModel.swift */,
+				A60C46252814EC3D00F64D10 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,6 +108,8 @@
 		A60C46242814EC0500F64D10 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A60C46272814F19000F64D10 /* DetailViewCell.swift */,
+				A60C46282814F19000F64D10 /* DetailViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -166,7 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60C46232814EBF500F64D10 /* CollectionViewController.xib in Resources */,
+				A60C462A2814F19000F64D10 /* DetailViewCell.xib in Resources */,
+				A60C46322814F7C300F64D10 /* DetailViewController.xib in Resources */,
 				A60C4616281438F400F64D10 /* LaunchScreen.storyboard in Resources */,
 				A60C4613281438F400F64D10 /* Assets.xcassets in Resources */,
 				A60C4611281438F200F64D10 /* Main.storyboard in Resources */,
@@ -180,11 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60C46222814EBF500F64D10 /* CollectionViewController.swift in Sources */,
 				A60C460E281438F200F64D10 /* ViewController.swift in Sources */,
+				A60C46292814F19000F64D10 /* DetailViewCell.swift in Sources */,
 				A60C460A281438F200F64D10 /* AppDelegate.swift in Sources */,
 				A60C460C281438F200F64D10 /* SceneDelegate.swift in Sources */,
-				A60C46262814EC3D00F64D10 /* CollectionViewModel.swift in Sources */,
+				A60C46262814EC3D00F64D10 /* DetailViewModel.swift in Sources */,
+				A60C46312814F7C300F64D10 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
