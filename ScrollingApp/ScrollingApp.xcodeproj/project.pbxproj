@@ -13,6 +13,9 @@
 		A60C4611281438F200F64D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C460F281438F200F64D10 /* Main.storyboard */; };
 		A60C4613281438F400F64D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C4612281438F400F64D10 /* Assets.xcassets */; };
 		A60C4616281438F400F64D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60C4614281438F400F64D10 /* LaunchScreen.storyboard */; };
+		A60C46222814EBF500F64D10 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C46202814EBF500F64D10 /* CollectionViewController.swift */; };
+		A60C46232814EBF500F64D10 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60C46212814EBF500F64D10 /* CollectionViewController.xib */; };
+		A60C46262814EC3D00F64D10 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C46252814EC3D00F64D10 /* CollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A60C4612281438F400F64D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60C4615281438F400F64D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60C4617281438F400F64D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60C46202814EBF500F64D10 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		A60C46212814EBF500F64D10 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		A60C46252814EC3D00F64D10 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,47 @@
 				A60C4609281438F200F64D10 /* AppDelegate.swift */,
 				A60C460B281438F200F64D10 /* SceneDelegate.swift */,
 				A60C460D281438F200F64D10 /* ViewController.swift */,
+				A60C461D2814EBB000F64D10 /* Scenes */,
 				A60C460F281438F200F64D10 /* Main.storyboard */,
 				A60C4612281438F400F64D10 /* Assets.xcassets */,
 				A60C4614281438F400F64D10 /* LaunchScreen.storyboard */,
 				A60C4617281438F400F64D10 /* Info.plist */,
 			);
 			path = ScrollingApp;
+			sourceTree = "<group>";
+		};
+		A60C461D2814EBB000F64D10 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A60C461F2814EBD000F64D10 /* ViewModel */,
+				A60C461E2814EBC800F64D10 /* View */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A60C461E2814EBC800F64D10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A60C46242814EC0500F64D10 /* Cells */,
+				A60C46202814EBF500F64D10 /* CollectionViewController.swift */,
+				A60C46212814EBF500F64D10 /* CollectionViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A60C461F2814EBD000F64D10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A60C46252814EC3D00F64D10 /* CollectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A60C46242814EC0500F64D10 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60C46232814EBF500F64D10 /* CollectionViewController.xib in Resources */,
 				A60C4616281438F400F64D10 /* LaunchScreen.storyboard in Resources */,
 				A60C4613281438F400F64D10 /* Assets.xcassets in Resources */,
 				A60C4611281438F200F64D10 /* Main.storyboard in Resources */,
@@ -138,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60C46222814EBF500F64D10 /* CollectionViewController.swift in Sources */,
 				A60C460E281438F200F64D10 /* ViewController.swift in Sources */,
 				A60C460A281438F200F64D10 /* AppDelegate.swift in Sources */,
 				A60C460C281438F200F64D10 /* SceneDelegate.swift in Sources */,
+				A60C46262814EC3D00F64D10 /* CollectionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
