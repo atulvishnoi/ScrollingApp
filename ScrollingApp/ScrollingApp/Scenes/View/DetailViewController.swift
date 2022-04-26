@@ -106,7 +106,6 @@ extension DetailViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewFlowLayout
 extension DetailViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
-
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,

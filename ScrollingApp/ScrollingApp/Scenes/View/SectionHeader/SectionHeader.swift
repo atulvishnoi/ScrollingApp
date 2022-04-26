@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SectionHeader: UICollectionReusableView {
+final class SectionHeader: UICollectionReusableView {
 
     // MARK: - Properties
     @IBOutlet private weak var titleLabel: UILabel!

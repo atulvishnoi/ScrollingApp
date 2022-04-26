@@ -139,7 +139,6 @@
 				A6B4C5C828167067009DF5B3 /* UICollectionView+Extensions.swift */,
 				A6B4C5CA28167409009DF5B3 /* NSObject+Extensions.swift */,
 				A6B4C5CC28167450009DF5B3 /* UIView+Extensions.swift */,
-				A6B4C5CE2817E000009DF5B3 /* Common.swift */,
 				A6B4C5D82817ED68009DF5B3 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
@@ -148,6 +147,7 @@
 		A6B4C5D02817E7AE009DF5B3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A6B4C5CE2817E000009DF5B3 /* Common.swift */,
 				A6B4C5D12817E7E7009DF5B3 /* StickyHeaderCollectionViewFlowLayout.swift */,
 			);
 			path = Shared;
