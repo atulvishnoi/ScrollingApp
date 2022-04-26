@@ -16,4 +16,7 @@ final class DetailViewCell: UICollectionViewCell {
         // Initialization code
     }
 
+    func configure(imageName: String) {
+        imageView.image = UIImage(named: imageName)
+    }
 }

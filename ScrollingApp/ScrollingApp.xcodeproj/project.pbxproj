@@ -18,6 +18,9 @@
 		A60C462A2814F19000F64D10 /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60C46282814F19000F64D10 /* DetailViewCell.xib */; };
 		A60C46312814F7C300F64D10 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C462F2814F7C300F64D10 /* DetailViewController.swift */; };
 		A60C46322814F7C300F64D10 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60C46302814F7C300F64D10 /* DetailViewController.xib */; };
+		A6B4C5C928167067009DF5B3 /* UICollectionView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C5C828167067009DF5B3 /* UICollectionView+extensions.swift */; };
+		A6B4C5CB28167409009DF5B3 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C5CA28167409009DF5B3 /* NSObject+Extensions.swift */; };
+		A6B4C5CD28167450009DF5B3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4C5CC28167450009DF5B3 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		A60C46282814F19000F64D10 /* DetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewCell.xib; sourceTree = "<group>"; };
 		A60C462F2814F7C300F64D10 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A60C46302814F7C300F64D10 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		A6B4C5C828167067009DF5B3 /* UICollectionView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+extensions.swift"; sourceTree = "<group>"; };
+		A6B4C5CA28167409009DF5B3 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		A6B4C5CC28167450009DF5B3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 				A60C461D2814EBB000F64D10 /* Scenes */,
 				A60C460F281438F200F64D10 /* Main.storyboard */,
 				A60C4612281438F400F64D10 /* Assets.xcassets */,
+				A6B4C5C72816704C009DF5B3 /* Extensions */,
 				A60C4614281438F400F64D10 /* LaunchScreen.storyboard */,
 				A60C4617281438F400F64D10 /* Info.plist */,
 			);
@@ -112,6 +119,16 @@
 				A60C46282814F19000F64D10 /* DetailViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		A6B4C5C72816704C009DF5B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4C5C828167067009DF5B3 /* UICollectionView+extensions.swift */,
+				A6B4C5CA28167409009DF5B3 /* NSObject+Extensions.swift */,
+				A6B4C5CC28167450009DF5B3 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60C460E281438F200F64D10 /* ViewController.swift in Sources */,
+				A6B4C5C928167067009DF5B3 /* UICollectionView+extensions.swift in Sources */,
 				A60C46292814F19000F64D10 /* DetailViewCell.swift in Sources */,
+				A6B4C5CD28167450009DF5B3 /* UIView+Extensions.swift in Sources */,
 				A60C460A281438F200F64D10 /* AppDelegate.swift in Sources */,
 				A60C460C281438F200F64D10 /* SceneDelegate.swift in Sources */,
 				A60C46262814EC3D00F64D10 /* DetailViewModel.swift in Sources */,
 				A60C46312814F7C300F64D10 /* DetailViewController.swift in Sources */,
+				A6B4C5CB28167409009DF5B3 /* NSObject+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,25 +20,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vEV-OA-chb">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="10" y="44" width="394" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QyE-bI-P35">
                         <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="YaY-ie-Deg"/>
+                    </connections>
                 </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vEV-OA-chb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="5cV-lM-V2y"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vEV-OA-chb" secondAttribute="bottom" id="MmF-zz-EQG"/>
                 <constraint firstItem="vEV-OA-chb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Nmk-KB-dO3"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vEV-OA-chb" secondAttribute="trailing" id="Nwq-Wa-cms"/>
-                <constraint firstItem="vEV-OA-chb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gop-Rd-M8w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vEV-OA-chb" secondAttribute="trailing" constant="10" id="ctd-wq-xeG"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="114"/>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </view>
     </objects>
     <resources>
