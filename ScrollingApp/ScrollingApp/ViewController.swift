@@ -30,40 +30,30 @@ final class ViewController: UIViewController {
                 CellType.small("dummy"),
                 CellType.small("dummy"),
                 CellType.large("dummy"),
-                CellType.small("dummy"),
-                CellType.small("dummy"),
             ]),
             SectionType.semiDetail([CellType.large("dummy")]),
             SectionType.fullDetail([
                 CellType.small("dummy"),
                 CellType.small("dummy"),
                 CellType.large("dummy"),
-                CellType.small("dummy"),
-                CellType.small("dummy"),
             ]),
             SectionType.semiDetail([CellType.large("dummy")]),
             SectionType.fullDetail([
                 CellType.small("dummy"),
                 CellType.small("dummy"),
                 CellType.large("dummy"),
-                CellType.small("dummy"),
-                CellType.small("dummy"),
             ]),
             SectionType.semiDetail([CellType.large("dummy")]),
             SectionType.fullDetail([
                 CellType.small("dummy"),
                 CellType.small("dummy"),
-                CellType.large("dummy"),
-                CellType.small("dummy"),
-                CellType.small("dummy"),
+                CellType.large("dummy")
             ]),
             SectionType.semiDetail([CellType.large("dummy")]),
             SectionType.fullDetail([
                 CellType.small("dummy"),
                 CellType.small("dummy"),
-                CellType.large("dummy"),
-                CellType.small("dummy"),
-                CellType.small("dummy"),
+                CellType.large("dummy")
             ]),
             SectionType.semiDetail([CellType.large("dummy")])
         ]
